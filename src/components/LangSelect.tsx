@@ -50,6 +50,7 @@ export const LangSelect: React.FC<Props> = ({ className }) => {
         )}>
         {language.map((lang, i) => (
           <li
+            key={i}
             onClick={() => changeLanguage(i)}
             className="hover:text-gray-500 dark:text-white cursor-pointer ">
             {lang}

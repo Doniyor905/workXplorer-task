@@ -16,7 +16,6 @@ export const InputField: React.FC<Props> = ({
   registration,
   error,
 }) => {
-  console.log(error);
   return (
     <div className={cn('flex flex-col', className)}>
       <input

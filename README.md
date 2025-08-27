@@ -1,69 +1,18 @@
-# React + TypeScript + Vite
+## Использование AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+В процессе выполнения задания я использовал **ChatGPT (OpenAI, GPT-5)** как вспомогательный инструмент.
 
-Currently, two official plugins are available:
+### Как именно использовал
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Иногда я **забывал синтаксис или детали**, например, в `react-router-dom`.  
+  Это связано с тем, что я **давно не использовал эту библиотеку**, поэтому обращался к AI за быстрым напоминанием, чтобы не тратить много времени на чтение документации.
+- В работе с **React Hook Form** у меня возникали трудности с валидацией.  
+  Я просил подсказки, анализировал предложенный код и дописывал его самостоятельно, а не просто копировал.
+- При **оптимизации кода** в некоторых местах я обращался за советом, и AI помогал упростить или улучшить логику.
+- **Вёрстку, формы и общую структуру сайта** я сделал полностью самостоятельно.
 
-## Expanding the ESLint configuration
+### Роль AI
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+AI использовался в основном как **подсказчик и ускоритель**:  
+он напоминал синтаксис, помогал с ошибками, объяснял сложные моменты.  
+Основная реализация проекта (верстка, логика и интеграция) была выполнена вручную.

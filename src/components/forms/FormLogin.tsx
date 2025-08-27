@@ -33,10 +33,11 @@ export const FormLogin: React.FC<Props> = ({ title, className }) => {
     try {
       const result = await loginUser(data.email, data.password);
       localStorage.setItem('id', String(result.userId));
-      toast.success(`Успешно логин`);
+      toast.success(t('common.success'));
       navigate('/profile');
     } catch (error) {
-      alert(error);
+      toast.error(t('common.error'));
+      console.error(error);
     } finally {
       setLoading(false);
     }

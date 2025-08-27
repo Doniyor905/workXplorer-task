@@ -42,10 +42,11 @@ export const FormRegister: React.FC<Props> = ({ title, className }) => {
     try {
       const res = await registerUser(data.email, data.password);
       localStorage.setItem('id', res.id);
-      toast.success(`Успешно зарегистрировался`);
+      toast.success(t('common.success'));
       navigate('/profile');
     } catch (error) {
-      alert(error);
+      toast.error(t('common.error'));
+      console.log(error);
     } finally {
       setLoading(false);
     }

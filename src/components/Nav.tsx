@@ -10,12 +10,14 @@ export const Nav: React.FC<Props> = ({ className }) => {
   return (
     <div
       className={cn(
-        'bg-[#ddd] dark:bg-gray-800 py-2 pr-[100px] fixed w-full transition-colors duration-500',
+        'bg-[#ddd] dark:bg-gray-800 py-2 fixed w-full transition-colors duration-500',
         className,
       )}>
-      <div className="flex justify-end gap-2 items-center">
-        <ThemeSwitcher />
-        <LangSelect />
+      <div className="max-w-[1200px] w-full mx-auto px-4">
+        <div className="flex justify-end gap-2 items-center">
+          <ThemeSwitcher />
+          <LangSelect />
+        </div>
       </div>
     </div>
   );

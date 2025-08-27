@@ -19,7 +19,6 @@ type User = {
 
 export const Profile: React.FC<Props> = ({ className }) => {
   const [user, setUser] = React.useState<User | null>(null);
-  console.log(user);
   const userId = localStorage.getItem('id');
   const navigate = useNavigate();
   const { t } = useTranslation();
@@ -46,14 +45,14 @@ export const Profile: React.FC<Props> = ({ className }) => {
   return (
     <div className={cn('max-w-[1200px] mx-auto px-4 py-4', className)}>
       <h1 className="text-3xl font-bold">{t('common.profile')}</h1>
-      <div className=" flex justify-between items-center">
-        <div className="flex gap-3 items-center mt-8">
+      <div className="mt-8 flex justify-between items-center">
+        <div className="flex gap-3 items-center ">
           <img className="rounded-full w-13" src={user.avatar} alt="" />
           <div>
-            <h2 className="text-xl font-bold leading-3 dark:text-white">
+            <h2 className="text-base font-bold leading-3 dark:text-white sm:text-xl">
               {user.first_name} {user.last_name}
             </h2>
-            <p className="text-gray-500">{user.email}</p>
+            <p className="text-gray-500 text-sm sm:text-xl">{user.email}</p>
           </div>
         </div>
         <Link
