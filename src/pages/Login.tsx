@@ -17,7 +17,7 @@ export const Login: React.FC<Props> = ({ className }) => {
         'flex justify-center items-center min-h-screen bg-[#ddd] dark:bg-gray-900 transition-colors duration-500',
         className,
       )}>
-      <div className="sm:w-[700px] w-[400px] sm:h-[450px] h-full bg-white dark:bg-gray-600 transition-colors duration-500 flex sm:flex-row flex-col-reverse">
+      <div className="sm:w-[700px] w-[400px] sm:h-[450px] h-full bg-white dark:bg-gray-600 mx-4 transition-colors duration-500 flex sm:flex-row flex-col-reverse">
         <div className="sm:w-2/4 w-full p-2 flex flex-col justify-center items-center">
           <div className="shrink-0 w-full">
             <FormLogin title={t('login.title')} />
