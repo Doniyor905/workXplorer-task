@@ -1,0 +1,45 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "email": "Email",
+    "username": "Username",
+    "password": "Password",
+    "logout": "Logout",
+    "profile": "Profile"
+  },
+  "register": {
+    "title": "Sign Up",
+    "subtitle": "Come join us!",
+    "text": "We are so excited to have you here.If you haven't already, create an account to get access to exclusive offers, rewards, and discounts.",
+    "confirmPassword": "Confirm Password",
+    "submitButton": "Register",
+    "loginLink": "Already have an account? Sign In",
+    "withProvider": "or signup with",
+    "validation": {
+      "emailRequired": "Email is required",
+      "usernameRequired": "Username is required",
+      "emailInvalid": "Invalid email address",
+      "passwordRequired": "Password required",
+      "passwordMinLength": "Minimum 6 characters",
+      "passwordsNotMatch": "Passwords don't match"
+    }
+  },
+  "login": {
+    "title": "Sign In",
+    "subtitle": "Welcome back",
+    "text": " Welcome back! We are so happy to have you here. It's great to see you again. We hope you  had a safe and enjoyable time away.",
+    "submitButton": "Login",
+    "registerLink": "Don't have an account? Sign Up",
+    "withProvider": "or singup with"
+  },
+  "profile": {
+    "title": "My Profile",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email Address"
+  }
+}
+
+
